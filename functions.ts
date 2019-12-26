@@ -391,3 +391,4 @@ handlers.ClaimBattlePassReward = function (args, context)
         }
     }
 }
+
