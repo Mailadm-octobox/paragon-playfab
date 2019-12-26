@@ -100,7 +100,7 @@ handlers.DailyCheckIn = function (args, context)
         }
     }
 
-    var result = 
+    var result =
     {
         "RewardClaimed": claimed,
         "Streak": streak
@@ -241,8 +241,8 @@ handlers.ClaimBattlePassReward = function (args, context)
         "InsufficientLevel": false
     }
 
-    // Get this title's reward table so we know what items to grant. 
-    var GetTitleDataRequest = {"Keys": [BP_SCHEDULE, BP_EXPERIENCE_TABLE, BP_FREE_REWARD_TABLE, BP_PREMIUM_REWARD_TABLE]}; 
+    // Get this title's reward table so we know what items to grant.
+    var GetTitleDataRequest = {"Keys": [BP_SCHEDULE, BP_EXPERIENCE_TABLE, BP_FREE_REWARD_TABLE, BP_PREMIUM_REWARD_TABLE]};
     var GetTitleDataResult = server.GetTitleData(GetTitleDataRequest);
     if(!GetTitleDataResult.Data.hasOwnProperty(BP_EXPERIENCE_TABLE) || !GetTitleDataResult.Data.hasOwnProperty(BP_FREE_REWARD_TABLE) || !GetTitleDataResult.Data.hasOwnProperty(BP_PREMIUM_REWARD_TABLE))
     {
